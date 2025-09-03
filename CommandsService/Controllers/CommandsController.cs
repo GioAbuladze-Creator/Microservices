@@ -72,7 +72,4 @@ public class CommandsController : ControllerBase
         return CreatedAtRoute(nameof(GetCommandForPlatform),
             new { platformId = platformId, commandId = CommandReadDto.Id }, CommandReadDto);
     }
-
-
-
 }

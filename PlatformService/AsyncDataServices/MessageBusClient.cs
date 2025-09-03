@@ -28,6 +28,7 @@ public class MessageBusClient : IMessageBusClient
 
             _channel.ExchangeDeclare(exchange: "trigger", type: ExchangeType.Fanout);
             _connection.ConnectionShutdown += RabbitMQ_ConnectionShutdown;
+            
             Console.WriteLine("--> Connected to Message Bus");
         }
         catch (Exception ex)
